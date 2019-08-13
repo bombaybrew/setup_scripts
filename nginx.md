@@ -1,7 +1,8 @@
+# nginx.conf
 ```
 server {
     listen 80;
-    server_name aktkh.in;
+    server_name example.com;
     return 301 https://$host$request_uri;
 }
 
@@ -23,6 +24,7 @@ server {
 }
 ```
 
+# setup
 ```
 cd /etc/nginx/conf.d
 sudo /etc/init.d/nginx reload
