@@ -34,14 +34,17 @@ eval "$(pyenv virtualenv-init -)"
 
 > pyenv versions
 > pyenv global 3.7.4
-> python --version
-> pip --version
+> pip install --upgrade pip
+> python --version // 3.7.4
+> pip --version // 19.2.3
 ```
 
-### Tensorflow
+### DataScience
 
 ```
 # latest version at https://www.tensorflow.org/install/pip
 > pip install tensorflow==2.0.0-rc1
+
+> pip install -U scikit-learn
 ```
 
