@@ -19,6 +19,7 @@
 ```
 > df      // report file system disk space usage
 > lsblk   // list block devices
+```
 
 ### GPU
 
@@ -78,6 +79,7 @@ pip install missingno
 ### Juypter Notebook
 ```
 > pip install jupyter
-> jupyter notebook --ip x.x.x.x --port 8888 // x.x.x.x - local ip of server
+> jypter notebook // localhost only.
+> jupyter notebook --ip x.x.x.x --port 8888 // x.x.x.x - local ip of server.
 ```
 
