@@ -1,5 +1,5 @@
 
-
+### OS
 
 ```
 # Linux Version
@@ -14,9 +14,34 @@
 > sudo apt-get upgrade
 ```
 
+### Python
 ```
-# python3 --version
+# Python
+
 > sudo apt-get install python3.6
 > sudo apt-get install python3.7
+
+# pyenv
+
+> sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev
+
+> curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+
+## add to ~/.bashrc at the end of file
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+> pyenv versions
+> pyenv global 3.7.4
+> python --version
+> pip --version
+```
+
+### Tensorflow
+
+```
+# latest version at https://www.tensorflow.org/install/pip
+> pip install tensorflow==2.0.0-rc1
 ```
 
