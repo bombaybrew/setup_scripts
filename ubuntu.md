@@ -14,6 +14,21 @@
 > sudo apt-get upgrade
 ```
 
+### GPU
+
+```
+# ubuntu-drivers devices
+> lspci | grep -I VGA
+
+# shows list of devices ( graphics card for this instance)
+> prime-select query
+
+# select prime driver
+> sudo prime-select Nvidia
+> sudo prime-select intel
+
+```
+
 ### Python
 ```
 # Python
