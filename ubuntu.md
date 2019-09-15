@@ -14,6 +14,12 @@
 > sudo apt-get upgrade
 ```
 
+### Disk
+
+```
+> df      // report file system disk space usage
+> lsblk   // list block devices
+
 ### GPU
 
 ```
@@ -50,16 +56,28 @@ eval "$(pyenv virtualenv-init -)"
 > pyenv versions
 > pyenv global 3.7.4
 > pip install --upgrade pip
-> python --version // 3.7.4
-> pip --version // 19.2.3
+> python --version  // 3.7.4
+> pip --version     // 19.2.3
 ```
 
 ### DataScience
 
 ```
-# latest version at https://www.tensorflow.org/install/pip
-> pip install tensorflow==2.0.0-rc1
+// latest version at https://www.tensorflow.org/install/pip
+pip install tensorflow==2.0.0-rc1
+pip install -U scikit-learn
+pip install numpy
+pip install pandas
+pip install scipy
+pip install matplotlib
+pip install scrapy
+pip install --upgrade gensim
+pip install missingno
+```
 
-> pip install -U scikit-learn
+### Juypter Notebook
+```
+> pip install jupyter
+> jupyter notebook --ip x.x.x.x --port 8888 // x.x.x.x - local ip of server
 ```
 
