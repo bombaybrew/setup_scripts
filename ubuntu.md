@@ -34,6 +34,9 @@
 > sudo prime-select Nvidia
 > sudo prime-select intel
 
+# Ubuntu 18.04
+sudo apt-add-repository -r ppa:graphics-drivers/ppa
+sudo apt install nvidia-driver-430
 ```
 
 ### Python
@@ -65,7 +68,8 @@ eval "$(pyenv virtualenv-init -)"
 
 ```
 // latest version at https://www.tensorflow.org/install/pip
-pip install tensorflow==2.0.0-rc1
+pip install tensorflow==2.0.0
+pip install tensorflow-gpu==2.0.0     // GPU version
 pip install -U scikit-learn
 pip install numpy
 pip install pandas
