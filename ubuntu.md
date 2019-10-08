@@ -37,6 +37,23 @@
 # Ubuntu 18.04
 sudo apt-add-repository -r ppa:graphics-drivers/ppa
 sudo apt install nvidia-driver-430
+
+// INSTALL only CUDA 10.0. Do not install CUDA 10.1 for TF2.0 // OCT 2018
+sudo apt install cuda-libraries-10-0
+// download cuDNN as per https://www.tensorflow.org/install/gpu
+sudo dpkg -i libcudnn7_7.6.4.38-1+cuda10.0_amd64.deb 
+```
+
+```
+// verify gpu
+import tensorflow as tf
+if tf.test.gpu_device_name():
+    print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+else:
+    print("Please install GPU version of TF")
+    
+// OUTPUT
+Created TensorFlow device (/device:GPU:0 with 7398 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1)
 ```
 
 ### Python
