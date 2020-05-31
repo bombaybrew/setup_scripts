@@ -6,6 +6,10 @@ $ sudo yum install epel-release
 $ sudo yum install nginx
 $ sudo nginx -v
 nginx version: nginx/1.16.1
+
+$ sudo systemctl start nginx
+$ sudo systemctl stop nginx
+$ sudo systemctl restart nginx
 ```
 
 ## nginx.conf
