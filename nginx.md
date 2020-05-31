@@ -1,4 +1,14 @@
-# nginx.conf
+## setup
+```
+$ sudo yum install epel-release
+# sudo amazon-linux-extras install epel
+
+$ sudo yum install nginx
+$ sudo nginx -v
+nginx version: nginx/1.16.1
+```
+
+## nginx.conf
 ```
 server {
     listen 80;
@@ -24,7 +34,7 @@ server {
 }
 ```
 
-# setup
+## reload
 ```
 cd /etc/nginx/conf.d
 sudo /etc/init.d/nginx reload
