@@ -38,8 +38,20 @@ server {
 }
 ```
 
-## reload
+## reload / verify
 ```
-cd /etc/nginx/conf.d
-sudo /etc/init.d/nginx reload
+$ cd /etc/nginx/conf.d
+$ sudo /etc/init.d/nginx reload
+
+$ sudo systemctl start nginx
+$ sudo systemctl sstop nginx
+$ pgrep nginx
+$ ss -tlpn | grep :80
+```
+
+## logs
+```
+$ cd /var/log/nginx/
+$ tail -f access.log
+$ tail -f error.log
 ```
