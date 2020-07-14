@@ -104,3 +104,8 @@ pip install missingno
 > jupyter notebook --ip x.x.x.x --port 8888 // x.x.x.x - local ip of server.
 ```
 
+### Visual Studio
+```
+# https://code.visualstudio.com/docs/setup/linux
+sudo snap install --classic code
+```
