@@ -105,7 +105,32 @@ pip install missingno
 ```
 
 ### Visual Studio
+- https://code.visualstudio.com/docs/setup/linux
 ```
-# https://code.visualstudio.com/docs/setup/linux
-sudo snap install --classic code
+> sudo snap install --classic code
+```
+
+### Node
+- https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+```
+> sudo apt install nodejs npm
+
+> node --version
+v10.19.0
+
+> npm --version
+6.14.4
+```
+
+### MiniConda
+```
+> curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O -J
+
+> sha256sum Miniconda3-latest-Linux-x86_64.sh
+
+> bash bash Miniconda3-latest-Linux-x86_64.sh 
+
+```
+
+
 ```
