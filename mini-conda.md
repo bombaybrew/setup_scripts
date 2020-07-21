@@ -9,4 +9,6 @@ conda env list
 
 conda search python
 conda install python=3.7.6
+
+conda env remove --name <env_name>
 ```
