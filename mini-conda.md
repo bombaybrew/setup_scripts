@@ -12,3 +12,5 @@ conda install python=3.7.6
 
 conda env remove --name <env_name>
 ```
+
+## https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook
