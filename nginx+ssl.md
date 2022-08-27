@@ -1,13 +1,17 @@
 # Setup
 ```
 # Add certbot PPA
-# For amazon linux use yum instead of apt-get
 
 sudo apt-get update
 sudo apt-get install software-properties-common
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
+
+# For amazon linux
+sudo amazon-linux-extras install epel
+sudo yum install certbot
+
 
 # Install certbot
 sudo apt-get install certbot python-certbot-nginx
