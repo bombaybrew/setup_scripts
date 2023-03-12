@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    network_mode: bridge
+    restart: always
+    environment:
+      - POSTGRES_USER=<user>
+      - POSTGRES_PASSWORD=<pass>
+    ports:
+      - <port>:5432
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data/
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    network_mode: bridge
+    links:
+      - postgres
+    restart: always
+    ports:
+      - <port>:8080
+      
+  ghost:
+    image: ghost:4-alpine
+    container_name: ghost
+    volumes:
+      - ghost_volume:/var/lib/ghost/content/
+    ports:
+      - <port>:2368
+    restart: always
+    links:
+      - postgres
+
+volumes:
+  postgres_volume:
+    external:
+      name: postgres_volume
+  ghost_volume:
+    external:
+      name: ghost_volume
